@@ -1,0 +1,78 @@
+
+/**
+ * Write a description of class AccountManager here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+
+import java.util.Date;
+import java.util.Scanner;
+public class AccountManager
+{
+     private Customer customer;
+     private Account account;
+      private Date date;
+      private Transaction[] trans;
+     
+      public AccountManager(Customer customer){
+    }
+    public void start(){
+         Scanner scanner = new Scanner(System.in);
+         Transaction[] trans = new Transaction[3];
+         
+        for(int i=0; i<trans.length; i++){
+              
+            System.out.println("Welcome to the account transaction"); 
+            
+            double amount;
+            System.out.print("Enter your amount:");
+            amount = scanner.nextDouble();
+            
+            String reference;
+            System.out.print("Enter reference:");
+            reference = scanner.next();
+            
+            String type;
+            System.out.print("Enter type:");
+            type = scanner.next();
+            
+            Date date = new Date();
+            
+            Trans[i] = multiples;
+            account.addTransaction(trans[i]);
+            account.getBalance();
+            
+          
+            
+            
+            
+         
+            
+            
+            
+            
+            
+             
+            
+            
+            
+            
+            
+            
+            
+         
+          
+         
+        }
+    
+    }
+    public static void main(String[] args) {
+         Customer customer = new Customer("fernando","alonso");
+         AccountManager accountManager = new AccountManager(customer);
+         Account account =  new Account( customer, "1234");
+         
+         accountManager.start(); 
+       
+    }
+}
